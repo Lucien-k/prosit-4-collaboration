@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Créer un compte</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth">
+        <!-- Formulaire d'inscription -->
+        <div class="auth__content">
+            <a href="index.html" class="auth__back">
+                ← Retour à l'accueil
+            </a>
+
+            <h1 class="auth__title">Créer un compte</h1>
+
+            <form action="login.html" method="GET" class="auth__form">
+                <!-- Champ Nom complet -->
+                <div class="auth__field">
+                    <label for="reg-fullname" class="auth__label">Nom complet</label>
+                    <div class="auth__input-wrap">
+                        <input type="text" id="reg-fullname" class="auth__input" placeholder="Nom complet" required>
+                    </div>
+                </div>
+
+                <!-- Champ Email -->
+                <div class="auth__field">
+                    <label for="reg-email" class="auth__label">Email</label>
+                    <div class="auth__input-wrap">
+                        <input type="email" id="reg-email" class="auth__input" placeholder="Entrer votre email" required>
+                    </div>
+                </div>
+
+                <!-- Champ Niveaux -->
+                <div class="auth__field">
+                    <label for="reg-level" class="auth__label">Niveaux</label>
+                    <div class="auth__input-wrap">
+                        <select id="reg-level" class="auth__select" required>
+                            <option value="X1" selected>X1</option>
+                            <option value="X2">X2</option>
+                            <option value="X3">X3</option>
+                            <option value="X4">X4</option>
+                            <option value="X5">X5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Champ Mot de passe -->
+                <div class="auth__field">
+                    <label for="reg-password" class="auth__label">Mot de passe</label>
+                    <div class="auth__input-wrap">
+                        <input type="password" id="reg-password" class="auth__input" placeholder="Entrer votre mot de passe" required>
+                        <button type="button" class="auth__eye-btn" aria-label="Afficher le mot de passe">
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bouton Créer un compte -->
+                <button type="submit" class="btn btn--primary btn--full">
+                    Créer un compte
+                </button>
+            </form>
+
+            <!-- Pied de page carte -->
+            <p class="auth__footer">
+                Vous avez déjà un compte ? 
+                <a href="login.html" class="auth__footer-link">Connectez vous ↗</a>
+            </p>
+        </div>
+
+        <!-- Illustration visuelle latérale -->
+        <div class="auth__visual">
+            <img src="assets/ChatGPT Image Sep 20, 2026, 11_33_46 PM.png" alt="Illustration d'inscription" class="auth__illustration">
+        </div>
+    </div>
+
+</body>
+</html>
